@@ -4,7 +4,15 @@
 @tailwind utilities;
 
 :root {
-  background-color: #676565;
+  background-image: url('./assets/BGimage.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-position:  ; */
+
+
+
+  
 }
 
 /* body {
