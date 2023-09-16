@@ -5,7 +5,9 @@ export default {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      
+    },
   },
   plugins: [
     require('flowbite/plugin')
