@@ -1,88 +1,237 @@
 import React from 'react';
-import { BsGithub, BsFiletypeJs, BsFiletypeJsx, BsFiletypeSql, BsFiletypeHtml, BsFiletypeCss, BsServer, BsFillHexagonFill } from 'react-icons/bs';
-import { SiHandlebarsdotjs, SiExpress, SiNodedotjs, SiGraphql, SiMysql, SiMongodb, SiReact, SiPwa, SiVitest, SiJest, SiHeroku, SiNetlify, SiGithubpages} from 'react-icons/si';
-import { GiApolloCapsule} from 'react-icons/gi'
-import { AiFillApi, AiOutlineConsoleSql, AiOutlineEye} from 'react-icons/ai'
-import { RiPagesLine} from 'react-icons/ri'
-import { TbFileDatabase, TbSettings, TbServer, TbArrowNarrowRight, TbBrandVscode, TbPrompt} from 'react-icons/tb'
-import { FaKey} from 'react-icons/fa'
+import { BsGithub, BsFiletypeJsx, BsFiletypeSql, BsFiletypeHtml, BsFiletypeCss, BsFillBookFill } from 'react-icons/bs';
+import {
+    SiHandlebarsdotjs, SiExpress, SiNodedotjs, SiGraphql, SiMysql, SiMongodb, SiReact, SiPwa, SiVitest, SiJest, SiHeroku, SiInsomnia,
+    SiNetlify, SiGithubpages, SiJavascript, SiTypescript, SiHtml5
+} from 'react-icons/si';
+import { GiApolloCapsule } from 'react-icons/gi'
+import { AiFillApi, AiOutlineConsoleSql, AiOutlineEye, AiOutlineTeam, AiOutlineComment } from 'react-icons/ai'
+import { RiPagesLine } from 'react-icons/ri'
+import { TbFileDatabase, TbSettings, TbServer, TbArrowNarrowRight, TbBrandVscode, TbPrompt } from 'react-icons/tb'
+import { FaKey, FaLightbulb } from 'react-icons/fa'
+
+
+
+
 const Skills = () => {
     return (
-        <div className="flex flex-col pt-5 ">
-                <h2 className="text-4xl">Version Control</h2>
-                <h3 className="text-3xl"> <BsGithub />Github </h3>
-                <br></br>
 
+        <>
+        <div className="m-20">
+            <h1 className="flex justify-center text-5xl font-semibold text-center m-20">Skills</h1>
+       
+            <div className="skills grid grid-cols-2 gap-4 lg:grid-cols-4">
+                {/* Version Control */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Version Control</h2>
+                    <div className="flex items-center mt-2">
+                        <BsGithub className="text-4xl text-blue-500" />
+                        <span className="ml-2 text-xl">GitHub</span>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">Programming Languages</h2>
-                <h3 className="text-3xl"><BsFiletypeJs />JavaScript</h3>
-                <h3 className="text-3xl"><BsFiletypeJsx />TypeScript</h3>
-                <h3 className="text-3xl"><BsFiletypeSql />mySql</h3>
-                <br></br>
+                {/* Programming Languages */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Programming Languages</h2>
+                    <div className="flex flex-col mt-2">
+                        <div className="flex items-center">
+                            <SiJavascript className="text-4xl text-yellow-500" />
+                            <span className="ml-2 text-xl">JavaScript</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <SiTypescript className="text-4xl text-blue-500" />
+                            <span className="ml-2 text-xl">TypeScript</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <SiMysql className="text-4xl text-green-500" />
+                            <span className="ml-2 text-xl">SQL</span>
+                        </div>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">Web Development Technologies</h2>
-                <h3 className="text-3xl"><BsFiletypeHtml />HTML</h3>
-                <h3 className="text-3xl"><BsFiletypeCss />CSS</h3>
-                <h3 className="text-3xl"><SiExpress />Express</h3>
-                <h3 className="text-3xl"><SiNodedotjs />Node</h3>
-                <h3 className="text-3xl"><SiHandlebarsdotjs />Handlebars</h3>
-                <h3 className="text-3xl"><SiGraphql/>GraphQL</h3>
-                <h3 className="text-3xl"><GiApolloCapsule />Apollo</h3>
-                <br></br>
+                {/* Web Development Technologies */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Web Development Technologies</h2>
+                    <div className="flex flex-col mt-2">
+                        <div className="flex items-center">
+                            <SiHtml5 className="text-4xl text-red-500" />
+                            <span className="ml-2 text-xl">HTML</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <BsFiletypeCss className="text-4xl text-blue-500" />
+                            <span className="ml-2 text-xl">CSS</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <SiExpress className="text-4xl text-purple-500" />
+                            <span className="ml-2 text-xl">Express</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <SiNodedotjs className="text-4xl text-green-500" />
+                            <span className="ml-2 text-xl">Node</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <SiHandlebarsdotjs className="text-4xl text-orange-500" />
+                            <span className="ml-2 text-xl">Handlebars</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <SiGraphql className="text-4xl text-pink-500" />
+                            <span className="ml-2 text-xl">GraphQL</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <GiApolloCapsule className="text-4xl text-blue-500" />
+                            <span className="ml-2 text-xl">Apollo</span>
+                        </div>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">Database Technologies</h2>
-                <h3 className="text-3xl"><SiMysql />SQL</h3>
-                <h3 className="text-3xl"><AiOutlineConsoleSql />noSQL</h3>
-                <h3 className="text-3xl"><SiMongodb />MongoDB</h3>
-                <br></br>
+                {/* Database Technologies */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Database Technologies</h2>
+                    <div className="flex flex-col mt-2">
+                        <div className="flex items-center">
+                            <SiMysql className="text-4xl text-purple-500" />
+                            <span className="ml-2 text-xl">SQL</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <AiOutlineConsoleSql className="text-4xl text-green-500" />
+                            <span className="ml-2 text-xl">noSQL</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <SiMongodb className="text-4xl text-green-500" />
+                            <span className="ml-2 text-xl">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">API Integration</h2>
-                <h3 className="text-3xl"><AiFillApi />Web/3rd party/server-side API</h3>
-                <br></br>
+                {/* API Integration */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">API Integration</h2>
+                    <div className="flex items-center mt-2">
+                        <AiFillApi className="text-4xl text-blue-600" />
+                        <span className="ml-2 text-xl">Web/3rd party/server-side API</span>
+                    </div>
+                    <div className="flex items-center mt-2">
+                        <SiInsomnia className="text-4xl text-blue-600" />
+                        <span className="ml-2 text-xl">Insomnia</span>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">Software Development Concepts and Techniques</h2>
-                <h3 className="text-3xl"><RiPagesLine />Object-Oriented Programming (OOP)</h3>
-                <h3 className="text-3xl"><TbFileDatabase />Object-Relational Mapping (ORM)</h3>
-                <h3 className="text-3xl"><TbSettings /><TbArrowNarrowRight /><AiOutlineEye /><TbArrowNarrowRight /><TbServer />Model-View-Controller (MVC)</h3>
-                <h3 className="text-3xl"><SiPwa />Progressive Web Apps (PWA)</h3>
-                <br></br>
+                {/* Software Development Concepts and Techniques */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Software Development Concepts and Techniques</h2>
+                    <div className="flex flex-col mt-2">
+                        <div className="flex items-center">
+                            <RiPagesLine className="text-4xl text-blue-500" />
+                            <span className="ml-2 text-xl">Object-Oriented Programming (OOP)</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <TbFileDatabase className="text-4xl text-blue-500" />
+                            <span className="ml-2 text-xl">Object-Relational Mapping (ORM)</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <TbSettings /><TbArrowNarrowRight /><AiOutlineEye /><TbArrowNarrowRight /><TbServer className="text-4xl text-blue-500" />
+                            <span className="ml-2 text-xl">Model-View-Controller (MVC)</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <SiPwa className="text-4xl text-yellow-500" />
+                            <span className="ml-2 text-xl">Progressive Web Apps (PWA)</span>
+                        </div>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">Frontend Development</h2>
-                <h3 className="text-3xl"><SiReact />React</h3>
-                <br></br>
+                {/* Frontend Development */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Frontend Development</h2>
+                    <div className="flex items-center mt-2">
+                        <SiReact className="text-4xl text-blue-400" />
+                        <span className="ml-2 text-xl">React</span>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">Authentication</h2>
-                <h3 className="text-3xl"><FaKey />JSON Web Token (JWT)</h3>
-                <br></br>
+                {/* Authentication */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Authentication</h2>
+                    <div className="flex items-center mt-2">
+                        <FaKey className="text-4xl text-red-500" />
+                        <span className="ml-2 text-xl">JSON Web Token (JWT)</span>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">Build Tools</h2>
-                <h3 className="text-3xl"><SiVitest />Vite</h3>
-                <br></br>
+                {/* Build Tools */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Build Tools</h2>
+                    <div className="flex items-center mt-2">
+                        <SiVitest className="text-4xl text-yellow-500" />
+                        <span className="ml-2 text-xl">Vite</span>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">Testing</h2>
-                <h3 className="text-3xl"><SiJest />Jest</h3>
-                <br></br>
+                {/* Testing */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Testing</h2>
+                    <div className="flex items-center mt-2">
+                        <SiJest className="text-4xl text-red-600" />
+                        <span className="ml-2 text-xl">Jest</span>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">Deployment and Hosting</h2>
-                <h3 className="text-3xl"><SiHeroku />Heroku</h3>
-                <h3 className="text-3xl"><SiNetlify />Netlify</h3>
-                <h3 className="text-3xl"><SiGithubpages />Github Pages</h3>
-                <br></br>
+                {/* Deployment and Hosting */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Deployment and Hosting</h2>
+                    <div className="flex flex-col mt-2">
+                        <div className="flex items-center">
+                            <SiHeroku className="text-4xl text-blue-400" />
+                            <span className="ml-2 text-xl">Heroku</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <SiNetlify className="text-4xl text-blue-400" />
+                            <span className="ml-2 text-xl">Netlify</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <SiGithubpages className="text-4xl text-blue-400" />
+                            <span className="ml-2 text-xl">GitHub Pages</span>
+                        </div>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">Development Environment</h2>
-                <h3 className="text-3xl"><TbBrandVscode />Visual Studio Code</h3>
-                <h3 className="text-3xl"><TbPrompt />Command line proficiency</h3>
-                <br></br>
+                {/* Development Environment */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Development Environment</h2>
+                    <div className="flex items-center mt-2">
+                        <TbBrandVscode className="text-4xl text-blue-500" />
+                        <span className="ml-2 text-xl">Visual Studio Code</span>
+                    </div>
+                    <div className="flex items-center mt-2">
+                        <TbPrompt className="text-4xl text-purple-500" />
+                        <span className="ml-2 text-xl">Command line proficiency</span>
+                    </div>
+                </div>
 
-                <h2 className="text-4xl">Soft Skills</h2>
-                <h3 className="text-3xl"><BsFiletypeHtml />Problem Solving </h3>
-                <h3 className="text-3xl"><BsFiletypeHtml />Collaboration and Teamwork</h3>
-                <h3 className="text-3xl"><BsFiletypeHtml />Effective Communication</h3>
-                <h3 className="text-3xl"><BsFiletypeHtml />Adaptability and continuous learning</h3>
-             
+                {/* Soft Skills */}
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+                    <h2 className="text-2xl font-semibold">Soft Skills</h2>
+                    <div className="flex flex-col mt-2">
+                        <div className="flex items-center">
+                            <FaLightbulb className="text-4xl text-yellow-400" />
+                            <span className="ml-2 text-xl">Problem Solving</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <AiOutlineTeam className="text-4xl text-green-500" />
+                            <span className="ml-2 text-xl">Collaboration and Teamwork</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <AiOutlineComment className="text-4xl text-blue-500" />
+                            <span className="ml-2 text-xl">Effective Communication</span>
+                        </div>
+                        <div className="flex items-center mt-2">
+                            <BsFillBookFill className="text-4xl text-blue-500" />
+                            <span className="ml-2 text-xl">Adaptability and Continuous Learning</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
+            </div></>
     );
-}
+};
 
 export default Skills;
