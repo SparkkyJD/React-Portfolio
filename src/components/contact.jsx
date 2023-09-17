@@ -7,32 +7,12 @@ export default function Contact() {
         <div className="max-w-md mx-auto h-[75vh]">
             <h2 className="text-5xl font-semibold m-20 flex justify-center">Contact Me</h2>
 
-            <form
-                name="contact v1"
-                method="post"
-                data-netlify="true"
-                onSubmit="submit"
-            >
-                <input type="hidden" name="form-name" value="contact v1" />
-
-                <div>
-                    <label>First name <br />
-                        <input type="text" name="first-name" />
-                    </label>
-                </div>
-
-                <div>
-                    <label htmlFor="email">Email</label> <br />
-                    <input id="email" type="email" name="email"/>
-                </div>
-
-                <div>
-                    <label>Messageewe <br />
-                      <textarea name="comments"></textarea>
-
-                    </label>
-                </div>
-                <button type="submit">Submit</button>
+            <form name="Contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="Contact" />
+                <input type="text" name="name" placeholder="Name" />
+                <input type="email" name="email" placeholder="Email" />
+                <textarea name="message" placeholder="Message"></textarea>
+                <div className="form-btn"><button type="submit">SUBMIT</button></div>
             </form>
         </div>
     );
