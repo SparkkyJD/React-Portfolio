@@ -5,7 +5,7 @@ const Portfolio = () => {
   return (
     <section>
 
-      <h2 className="font-bold my-20 text-center text-5xl">Projects</h2>
+      <h2 id="portfolio" className="font-bold my-20 text-center text-5xl">Projects</h2>
 
       <div className="flex flex-wrap gap-4 lg:flex-row justify-center mx-8">
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">

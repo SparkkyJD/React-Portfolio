@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section>
       
-      <div className="container mx-auto dark:text-white p-4 lg:p-0">
+      <div id="about" className="container mx-auto dark:text-white p-4 lg:p-0">
         <div className="lg:flex lg:justify-center lg:items-center lg:space-x-10">
           <div className="">
             <div className="">

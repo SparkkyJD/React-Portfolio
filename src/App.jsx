@@ -9,18 +9,14 @@ import Contact from './components/contact';
 
 function App() {
   return (
-    
-    <div className="app">
-      <Navbar />
-      <main className= "bg-gray-100 dark:bg-gray-900">
-      <Intro/>
-      <About/>
-      <Portfolio/>
-      <Skills/>
-      <Contact/>
-      </main>
-    </div>
-    
+      <div className="app bg-gray-100 dark:bg-gray-900">
+          <Navbar />
+          <Intro />
+          <About />
+          <Portfolio />
+          <Skills />
+          <Contact />
+      </div>
   );
 }
 

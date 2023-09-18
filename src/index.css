@@ -3,8 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Roboto', sans-serif; /* Use the imported font name */
+  font-family: 'Roboto', sans-serif; 
 }
 
 

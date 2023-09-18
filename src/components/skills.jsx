@@ -12,13 +12,10 @@ import { TbFileDatabase, TbSettings, TbServer, TbArrowNarrowRight, TbBrandVscode
 import { FaKey, FaLightbulb } from 'react-icons/fa'
 
 
-
-
-
 export default function Skills() {
     return (
         <>
-            <div className="">
+            <div id="skills" className="">
                 <h1 className="flex justify-center text-5xl font-semibold text-center m-20 ">Skills</h1>
 
                 <div className="bg-gray-600 rounded-lg shadow-md flex justify-center items-center h-[400px] mx-[10%]">
