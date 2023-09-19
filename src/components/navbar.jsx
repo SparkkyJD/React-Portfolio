@@ -1,4 +1,3 @@
-// src/components/navbar.jsx
 import React, { useRef, useEffect } from "react";
 import DarkModeToggle from "./DarkModeToggle";
 import logo from "../assets/logo2.png";
@@ -19,6 +18,12 @@ function Navbar() {
     };
 
     triggerElementRef.current.addEventListener("click", handleToggleClick);
+
+    setTimeout(() => {
+      triggerElementRef.current.style.display = "none";
+      triggerElementRef.current.offsetHeight;
+      triggerElementRef.current.style.display = ""; 
+    }, 10);
 
     return () => {
       triggerElementRef.current.removeEventListener("click", handleToggleClick);
