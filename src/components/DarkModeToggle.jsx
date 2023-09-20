@@ -32,7 +32,7 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <div className="dark-mode-toggle">
+    <div className="dark-mode-toggle p-2">
       <div className="cursor-pointer" onClick={toggleDarkMode}>
         {isDarkMode ? (
           <FontAwesomeIcon icon={faSun} className="text-white text-2xl" />
