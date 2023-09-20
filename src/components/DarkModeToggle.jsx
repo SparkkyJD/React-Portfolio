@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const savedTheme = localStorage.getItem('color-theme');
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    const savedTheme = localStorage.getItem("color-theme");
+    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
       setIsDarkMode(true);
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     } else {
       setIsDarkMode(false);
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
   }, []);
 
@@ -23,11 +25,11 @@ const DarkModeToggle = () => {
 
     const html = document.documentElement;
     if (newDarkMode) {
-      html.classList.add('dark');
-      localStorage.setItem('color-theme', 'dark');
+      html.classList.add("dark");
+      localStorage.setItem("color-theme", "dark");
     } else {
-      html.classList.remove('dark');
-      localStorage.setItem('color-theme', 'light');
+      html.classList.remove("dark");
+      localStorage.setItem("color-theme", "light");
     }
   };
 
