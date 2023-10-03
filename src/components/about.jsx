@@ -10,7 +10,8 @@ export default function About() {
           <img
             src={ME}
             alt="me"
-            className=" flex justify-center animate__animated animate__bounceInLeft rounded-full" style={{ width: "200px", height: "320px" }}
+            className=" flex justify-center animate__animated animate__bounceInLeft rounded-full" 
+            style={{ width: "500px", height: "500px" }}
           />
           <div className="lg:w-1/2 animate__animated animate__bounceInRight m-4 lg:m-0">
             <h2 className="font-bold my-20 text-center text-5xl">About Me</h2>

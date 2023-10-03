@@ -2,13 +2,13 @@
 
 import { Navbar } from "flowbite-react";
 import DarkModeToggle from "./DarkModeToggle";
-import logo from "../assets/logo2.png";
+import profilePic from "../assets/profilePic.png";
 
 export default function NavbarWithCTAButton() {
   return (
     <Navbar fluid rounded className="bg-blue-100">
       <Navbar.Brand style={{ backgroundColor: 'black' }} className="rounded-lg">
-  <img src={logo} alt="Logo" style={{ width: "60px", height: "60px" }} />
+  <img src={profilePic} alt="Logo" style={{ width: "60px", height: "60px" }} />
 </Navbar.Brand>
 
       <div className="flex md:order-2">
