@@ -62,6 +62,7 @@ const Portfolio = () => {
                 goals – all in one place.
               </p>
             </p>
+
             <Button>
               <p>Visit Deployed App</p>
             </Button>
@@ -113,10 +114,12 @@ const Portfolio = () => {
             </Button>
           </div>
         </Card>
+      </div>
+      <div className="flex justify-center mt-8">
         <Button
-        href="https://github.com/SparkkyJD"
+          href="https://github.com/SparkkyJD"
           className="flex items-center space-x-2 px-4 py-2 bg-gray-800 text-white hover:bg-gray-700 
-          focus:bg-gray-700 focus:ring focus:ring-offset-2 focus:ring-gray-600"
+      focus:bg-gray-700 focus:ring focus:ring-offset-2 focus:ring-gray-600"
         >
           <BsGithub className="text-3xl" />
           <span className="text-lg">See My Other Projects on GitHub</span>
