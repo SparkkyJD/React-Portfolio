@@ -42,8 +42,8 @@ import { FaKey, FaLightbulb } from "react-icons/fa";
 export default function Skills() {
   return (
     <>
-      <div id="skills" className="">
-        <h1 className="flex justify-center text-5xl font-semibold text-center m-20 ">
+      <div id="skills" className="dark:text-white">
+        <h1 className="flex justify-center text-5xl font-semibold text-center ">
           Skills
         </h1>
 

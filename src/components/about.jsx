@@ -5,35 +5,35 @@ import "animate.css";
 export default function About() {
   return (
     <section >
-      <div id="about" className="container mx-auto dark:text-white p-4 lg:p-0">
+      <h2 className=" dark:text-white font-bold my-20 text-center text-5xl">About Me</h2>
+      <div id="about" className="container mx-auto p-4 lg:p-0 " >
         <div className="lg:flex lg:justify-center lg:items-center lg:space-x-10">
           <img
             src={ME}
             alt="me"
-            className=" flex justify-center animate__animated animate__bounceInLeft rounded-full" 
-            style={{ width: "500px", height: "500px" }}
+            className=" flex justify-center animate__animated animate__bounceInLeft border-8 rounded-full border-blue-500" 
+            style={{ width: "400px", height: "400px" }}
           />
-          <div className="lg:w-1/2 animate__animated animate__bounceInRight m-4 lg:m-0">
-            <h2 className="font-bold my-20 text-center text-5xl">About Me</h2>
-            <p className="text-xl lg:text-2xl mb-4">
+          <div className="dark:text-white lg:w-1/2 animate__animated animate__bounceInRight m-4 lg:m-0">
+            
+            <p className="lg:text-xl mb-4">
               As a U.S. Navy Veteran with a background in maintaining Secret
               Level Aircraft and a recent graduate of the University of Chapel
-              Hill's Full Stack Web Developer Bootcamp, with an overall grade of
-              96%, I bring a unique blend of technical expertise.
+              Hill's Full Stack Web Developer Bootcamp, I bring a unique blend 
+              of technical expertise.
             </p>
-            <p className="text-xl lg:text-2xl mb-4">
+            <p className="lg:text-xl mb-4">
               My experience as a Technician for 10+ years has equipped me with
               the ability to efficiently solve complex problems and approach
               tasks with creative thinking. This background, combined with my
               newfound passion for Web Development, makes me excited to fully
               transition into the field of Full Stack Web Development.
             </p>
-            <p className="text-xl lg:text-2xl mb-4">
-              I am deeply enthusiastic about the challenges that Web Development
-              provides and am eager to bring my problem-solving skills,
-              attention to detail, and commitment to excellence to a dynamic
-              team. I am excited to contribute to innovative projects and
-              continuously learn in this fast-paced and ever-evolving field.
+            <p className="lg:text-xl mb-4">
+            I enjoy the challenges presented by Web Development and am eager to 
+            apply my problem-solving skills and attention to detail to a dynamic 
+            team. My commitment to excellence is further fueled by my 
+            dedication to continuous learning in this rapidly evolving field.
             </p>
             <button
               type="button"
