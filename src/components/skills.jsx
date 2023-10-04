@@ -44,7 +44,7 @@ export default function Skills() {
           Skills
         </h1>
 
-        <div className="bg-gray-600 rounded-lg shadow-md h-[35vh] mx-[20%]">
+        <div className="bg-gray-700 rounded-lg shadow-md h-[35vh] mx-[20%]">
           <Carousel slideInterval={1500000}>
 
             <div data-carousel-item className="flex flex-row items-center justify-center">
