@@ -6,7 +6,7 @@ import { BsGithub } from "react-icons/bs";
 
 const Portfolio = () => {
   return (
-    <section className="m-24 dark:text-white">
+    <section className="mb-24 dark:text-white ">
       <h2 id="portfolio" className="font-bold mb-20 text-center text-5xl">
         Projects
       </h2>
@@ -113,15 +113,34 @@ const Portfolio = () => {
             </Button>
           </div>
         </Card>
-        <Button
-        href="https://github.com/SparkkyJD"
-          className="flex items-center space-x-2 px-4 py-2 bg-gray-800 text-white hover:bg-gray-700 
-          focus:bg-gray-700 focus:ring focus:ring-offset-2 focus:ring-gray-600"
-        >
-          <BsGithub className="text-3xl" />
-          <span className="text-lg">See My Other Projects on GitHub</span>
-        </Button>
       </div>
+      
+<div className="flex justify-center">
+      <Card className="max-w-lg mt-4">
+      <h5 className="flex justify-start text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      
+        <p>
+        Explore More of My Work
+        
+        </p>
+        <BsGithub className="text-4xl mx-12"/>
+      </h5>
+      <p className="font-normal text-gray-700 dark:text-gray-400">
+        <p>
+        Take a closer look at my coding journey. From small-scale projects to ambitious endeavors, there's something for everyone.
+        </p>
+      </p>
+      <a href="https://github.com/SparkkyJD">
+      <Button>
+        <p>
+        View Projects
+        </p>
+        
+      </Button>
+      </a>
+    </Card>
+
+</div>
     </section>
   );
 };

@@ -24,16 +24,13 @@ import { GiApolloCapsule } from "react-icons/gi";
 import {
   AiFillApi,
   AiOutlineConsoleSql,
-  AiOutlineEye,
   AiOutlineTeam,
   AiOutlineComment,
 } from "react-icons/ai";
 import { RiPagesLine } from "react-icons/ri";
 import {
   TbFileDatabase,
-  TbSettings,
   TbServer,
-  TbArrowNarrowRight,
   TbBrandVscode,
   TbPrompt,
 } from "react-icons/tb";
@@ -47,10 +44,10 @@ export default function Skills() {
           Skills
         </h1>
 
-        <div className="bg-gray-600 rounded-lg shadow-md flex justify-center items-center h-[400px] mx-[10%]">
+        <div className="bg-gray-600 rounded-lg shadow-md h-[35vh] mx-[20%]">
           <Carousel slideInterval={1500000}>
 
-            <div data-carousel-item className="flex flex-row flex-start">
+            <div data-carousel-item className="flex flex-row items-center justify-center">
               <div className="p-4 ">
                 <h2 className="text-2xl font-semibold flex justify-center ">
                   Version Control
@@ -61,61 +58,68 @@ export default function Skills() {
                 </div>
               </div>
 
-              <div className="p-4 ">
-                <h2 className="text-2xl font-semibold">
-                  Programming Languages
-                </h2>
-                <div className="flex items-center">
-                  <SiJavascript className="text-4xl text-yellow-500" />
-                  <span className="ml-2 text-xl">JavaScript</span>
-                </div>
-                <div className="flex items-center mt-2">
-                  <SiTypescript className="text-4xl text-blue-500" />
-                  <span className="ml-2 text-xl">TypeScript</span>
-                </div>
-                <div className="flex items-center mt-2">
-                  <SiMysql className="text-4xl text-green-500" />
-                  <span className="ml-2 text-xl">SQL</span>
+              <div data-carousel-item className="flex flex-row items-center justify-center">
+                <div className="p-4 ">
+                  <h2 className="text-2xl font-semibold">
+                    Programming Languages
+                  </h2>
+                  <div className="flex items-center">
+                    <SiJavascript className="text-4xl text-yellow-500" />
+                    <span className="ml-2 text-xl">JavaScript</span>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <SiTypescript className="text-4xl text-blue-500" />
+                    <span className="ml-2 text-xl">TypeScript</span>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <SiMysql className="text-4xl text-green-500" />
+                    <span className="ml-2 text-xl">SQL</span>
+                  </div>
                 </div>
               </div>
 
-              <div className="p-4 ">
-                <h2 className="text-2xl font-semibold">
-                  Web Development Technologies
-                </h2>
-                <div className="flex items-center">
-                  <SiHtml5 className="text-4xl text-red-500" />
-                  <span className="ml-2 text-xl">HTML</span>
-                </div>
-                <div className="flex items-center mt-2">
-                  <BsFiletypeCss className="text-4xl text-blue-500" />
-                  <span className="ml-2 text-xl">CSS</span>
-                </div>
-                <div className="flex items-center mt-2">
-                  <SiExpress className="text-4xl text-purple-500" />
-                  <span className="ml-2 text-xl">Express</span>
-                </div>
-                <div className="flex items-center mt-2">
-                  <SiNodedotjs className="text-4xl text-green-500" />
-                  <span className="ml-2 text-xl">Node</span>
-                </div>
-                <div className="flex items-center mt-2">
-                  <SiHandlebarsdotjs className="text-4xl text-orange-500" />
-                  <span className="ml-2 text-xl">Handlebars</span>
-                </div>
-                <div className="flex items-center mt-2">
-                  <SiGraphql className="text-4xl text-pink-500" />
-                  <span className="ml-2 text-xl">GraphQL</span>
-                </div>
-                <div className="flex items-center mt-2">
-                  <GiApolloCapsule className="text-4xl text-blue-500" />
-                  <span className="ml-2 text-xl">Apollo</span>
+
+              <div data-carousel-item className="flex flex-col items-center justify-center">
+                <div className="p-4 ">
+                  <h2 className="text-2xl font-semibold">
+                    Web Development
+                  </h2>
+                  <div className="flex items-center">
+                    <SiHtml5 className="text-4xl text-red-500" />
+                    <span className="ml-2 text-xl">HTML</span>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <BsFiletypeCss className="text-4xl text-blue-500" />
+                    <span className="ml-2 text-xl">CSS</span>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <SiExpress className="text-4xl text-purple-500" />
+                    <span className="ml-2 text-xl">Express</span>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <SiNodedotjs className="text-4xl text-green-500" />
+                    <span className="ml-2 text-xl">Node</span>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <SiHandlebarsdotjs className="text-4xl text-orange-500" />
+                    <span className="ml-2 text-xl">Handlebars</span>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <SiGraphql className="text-4xl text-pink-500" />
+                    <span className="ml-2 text-xl">GraphQL</span>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <GiApolloCapsule className="text-4xl text-blue-500" />
+                    <span className="ml-2 text-xl">Apollo</span>
+                  </div>
                 </div>
               </div>
             </div>
 
 
-            <div data-carousel-item className="flex flex-row flex-start">
+
+            <div data-carousel-item className="flex flex-row items-center justify-center">
+
               <div className="p-4">
                 <h2 className="text-2xl font-semibold">
                   Database Technologies
@@ -166,10 +170,6 @@ export default function Skills() {
                   </span>
                 </div>
                 <div className="flex items-center mt-2">
-                  <TbSettings />
-                  <TbArrowNarrowRight />
-                  <AiOutlineEye />
-                  <TbArrowNarrowRight />
                   <TbServer className="text-4xl text-blue-500" />
                   <span className="ml-2 text-xl">
                     Model-View-Controller (MVC)
@@ -185,7 +185,8 @@ export default function Skills() {
             </div>
 
 
-            <div data-carousel-item className="flex flex-row items-center">
+            <div data-carousel-item className="flex flex-row items-center justify-center">
+
               <div className="p-4">
                 <h2 className="text-2xl font-semibold">Frontend Development</h2>
                 <div className="flex items-center mt-2">
@@ -211,7 +212,8 @@ export default function Skills() {
               </div>
             </div>
 
-            <div data-carousel-item className="flex flex-row items-center">
+            <div data-carousel-item className="flex flex-row items-center justify-center">
+
               <div className="p-4 " >
                 <h2 className="text-2xl font-semibold">Testing</h2>
                 <div className="flex items-center mt-2">
@@ -238,7 +240,7 @@ export default function Skills() {
                   <span className="ml-2 text-xl">GitHub Pages</span>
                 </div>
               </div>
-              
+
               <div className="p-4 " >
                 <h2 className="text-2xl font-semibold">
                   Development Environment
@@ -255,7 +257,8 @@ export default function Skills() {
             </div>
 
 
-            <div className="p-4 " data-carousel-item>
+            <div data-carousel-item className="flex flex-col items-center justify-center">
+
               <h2 className="text-2xl font-semibold">Soft Skills</h2>
               <div className="flex items-center">
                 <FaLightbulb className="text-4xl text-yellow-400" />
