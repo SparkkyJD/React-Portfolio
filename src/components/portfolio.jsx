@@ -6,8 +6,8 @@ import { BsGithub } from "react-icons/bs";
 
 const Portfolio = () => {
   return (
-    <section className="mb-24 dark:text-white ">
-      <h2 id="portfolio" className="font-bold mb-20 text-center text-5xl">
+    <section className="h-[95vh] overflow-x-auto dark:text-white ">
+      <h2 id="portfolio" className=" my-10 font-bold text-center text-5xl">
         Projects
       </h2>
 

@@ -3,12 +3,11 @@ import { Fade } from "react-awesome-reveal";
 import "animate.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { Card } from 'flowbite-react';
 
 export default function Intro() {
   return (
-    <div className="dark:text-white  h-[95vh] flex flex-col justify-center items-center ">
-      <Card className="dark:bg-transparent border-none">
+    
+    <div className="dark:text-white h-[95vh] flex flex-col justify-center items-center ">
         <div className="text-center mb-5">
           <h1 className="animate__animated animate__fadeInDown text-5xl md:text-6xl font-semibold mb-4">
             Hello, I am <span className="text-blue-500">Eric Wagner</span>
@@ -41,7 +40,6 @@ export default function Intro() {
             <MdEmail size={32} />
           </a>
         </div>
-      </Card>
     </div>
   );
 }
