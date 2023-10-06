@@ -8,7 +8,6 @@ import {
   SiMongodb,
   SiReact,
   SiPwa,
-  SiJest,
   SiJavascript,
   SiTypescript,
 } from "react-icons/si";
@@ -101,7 +100,7 @@ export default function Skills() {
         </div>
 
         <div className="flex-1 p-4 rounded-lg flex flex-col items-center">
-          <h2 className="text-2xl font-semibold">Software Development Concepts and Techniques</h2>
+          <h2 className="text-2xl font-semibold">Software Concepts and Techniques</h2>
           <div className="flex items-center mt-2">
             <RiPagesLine className="text-4xl text-blue-500 w-12 h-12" />
             <span className="ml-2 text-xl">Object-Oriented Programming (OOP)</span>

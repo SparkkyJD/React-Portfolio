@@ -7,7 +7,7 @@ import { Slide } from "react-awesome-reveal";
 
 const Portfolio = () => {
   return (
-    <section className="h-[120vh] mt-20 mx-8 overflow-x-auto dark:text-white ">
+    <section className="h-[140vh] mt-20 mx-8 overflow-x-auto dark:text-white ">
       <h2 id="portfolio" className=" my-10 font-bold text-center text-5xl">
         Projects
       </h2>
