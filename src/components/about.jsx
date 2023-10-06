@@ -4,10 +4,10 @@ import "animate.css";
 
 export default function About() {
   return (
-    <section className="h-[95vh] overflow-x-auto" >
+    <section id="about" className="h-[95vh] overflow-x-auto" >
       <h2 className=" dark:text-white font-bold  text-center text-5xl">About Me</h2>
       
-      <div id="about" className="container mx-auto p-4 lg:p-0 " >
+      <div  className="container mx-auto p-4 lg:p-0 " >
         <div className="lg:flex lg:justify-center lg:items-center lg:space-x-10">
           <img
             src={ME}

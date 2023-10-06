@@ -18,8 +18,8 @@ export default function NavbarWithCTAButton() {
       </div>
       <Navbar.Collapse >
         <Navbar.Link href="#about" className="">About</Navbar.Link>
-        <Navbar.Link href="#portfolio">Projects</Navbar.Link>
         <Navbar.Link href="#skills">Skills</Navbar.Link>
+        <Navbar.Link href="#portfolio">Projects</Navbar.Link>
         <Navbar.Link href="#contact">Contact</Navbar.Link>
         <Navbar.Link href="https://docs.google.com/document/d/1gyiBfBXGS5xdtybFLfi1_jStVxhBq7msz9NOITdHtTI/edit?usp=sharing">
           Resume
