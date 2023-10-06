@@ -1,15 +1,17 @@
 import React from "react";
+import { Zoom } from "react-awesome-reveal";
 
 export default function Contact() {
   return (
-    <div id="contact" className="max-w-md mx-auto h-[100vh] dark:text-white">
+    <div id="contact" className="max-w-md mx-auto  h-[120vh] dark:text-white">
       <h2 className="text-5xl font-semibold m-20 flex justify-center">
         Contact Me
       </h2>
+      <Zoom triggerOnce>
       <form
         name="contact"
         method="post"
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        className="px-8 pt-6 pb-8 mb-4"
       >
         <input
           type="hidden"
@@ -18,7 +20,7 @@ export default function Contact() {
           className="mb-4"
         />
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">
+          <label className="block text-sm font-bold mb-2">
             First Name
           </label>
           <input
@@ -30,7 +32,7 @@ export default function Contact() {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">
+          <label className="block  text-sm font-bold mb-2">
             Email
           </label>
           <input
@@ -43,7 +45,7 @@ export default function Contact() {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">
+          <label className="block text-sm font-bold mb-2">
             Message
           </label>
           <textarea
@@ -60,6 +62,7 @@ export default function Contact() {
           Submit
         </button>
       </form>
+      </Zoom>
     </div>
   );
 }

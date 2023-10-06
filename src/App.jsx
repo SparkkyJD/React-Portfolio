@@ -7,15 +7,22 @@ import Skills from './components/skills';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import backgroundImage from './assets/BG.png';
 
 function App() {
+  const backgroundStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+  };
   return (
-      <div className="app bg-blue-100 dark:bg-gray-800">
+      <div className="app bg-blue-100 dark:bg-gray-800" style={backgroundStyle}>
           <Navbar />
           <Intro />
           <About />
-          <Portfolio />
           <Skills />
+          <Portfolio />
           <Contact />
           <Footer />
       </div>

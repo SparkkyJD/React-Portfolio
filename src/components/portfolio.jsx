@@ -3,14 +3,15 @@ import { Button, Card } from "flowbite-react";
 import "font-awesome/css/font-awesome.min.css";
 import JATE from "../assets/JATE.jpg";
 import { BsGithub } from "react-icons/bs";
+import { Slide } from "react-awesome-reveal";
 
 const Portfolio = () => {
   return (
-    <section className="m-24 dark:text-white">
-      <h2 id="portfolio" className="font-bold mb-20 text-center text-5xl">
+    <section className="h-[120vh] mt-20 mx-8 overflow-x-auto dark:text-white ">
+      <h2 id="portfolio" className=" my-10 font-bold text-center text-5xl">
         Projects
       </h2>
-
+<Slide triggerOnce>
       <div className="flex flex-wrap justify-center gap-4">
         <Card className="max-w-xs">
           <div className="flex flex-col h-full justify-between">
@@ -115,16 +116,34 @@ const Portfolio = () => {
           </div>
         </Card>
       </div>
-      <div className="flex justify-center mt-8">
-        <Button
-          href="https://github.com/SparkkyJD"
-          className="flex items-center space-x-2 px-4 py-2 bg-gray-800 text-white hover:bg-gray-700 
-      focus:bg-gray-700 focus:ring focus:ring-offset-2 focus:ring-gray-600"
-        >
-          <BsGithub className="text-3xl" />
-          <span className="text-lg">See My Other Projects on GitHub</span>
-        </Button>
-      </div>
+      </Slide>
+      
+<div className="flex justify-center">
+      <Card className="max-w-lg mt-4">
+      <h5 className="flex justify-start text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      
+        <p>
+        Explore More of My Work
+        
+        </p>
+        <BsGithub className="text-4xl mx-12"/>
+      </h5>
+      <p className="font-normal text-gray-700 dark:text-gray-400">
+        <p>
+        Take a closer look at my coding journey. From small-scale projects to ambitious endeavors, there's something for everyone.
+        </p>
+      </p>
+      <a href="https://github.com/SparkkyJD">
+      <Button>
+        <p>
+        View Projects
+        </p>
+        
+      </Button>
+      </a>
+    </Card>
+
+</div>
     </section>
   );
 };
