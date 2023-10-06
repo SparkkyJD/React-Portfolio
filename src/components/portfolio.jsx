@@ -30,7 +30,7 @@ const Portfolio = () => {
                 SquadSync is an innovative task management application that
                 leverages technologies like{" "}
                 <span className="text-blue-500">
-                  GraphQL, React, MongoDB, and Tailwind
+                  GraphQL, Express, React, MongoDB, and Tailwind
                 </span>{" "}
                 to centralize and organize user lists, promote collaboration,
                 and prioritize tasks for efficient and collaborative task
