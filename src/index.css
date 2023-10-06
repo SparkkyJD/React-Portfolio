@@ -9,7 +9,18 @@ scroll-behavior: smooth;
 
 body {
   font-family: 'Roboto', sans-serif; 
+}
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333;
 }
 
 
