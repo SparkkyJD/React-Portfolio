@@ -17,7 +17,7 @@ const Portfolio = () => {
           <div className="flex flex-col h-full justify-between">
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               <p className="flex justify-center">Squad Sync</p>
-              <a href="https://squad-sync-5e36d690cf8e.herokuapp.com/">
+              <a >
                 <img
                   className="rounded-t-lg"
                   src="https://i.ibb.co/RpCLb30/screenshot1.png"
@@ -37,7 +37,7 @@ const Portfolio = () => {
                 management.
               </p>
             </p>
-            <Button>
+            <Button href="https://squad-sync-5e36d690cf8e.herokuapp.com/">
               <p>Visit Deployed App</p>
             </Button>
           </div>
@@ -47,7 +47,7 @@ const Portfolio = () => {
           <div className="flex flex-col h-full justify-between">
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               <p className="flex justify-center">Challenge Fitness</p>
-              <a href="https://challenge-fitness-9cf387429034.herokuapp.com/login">
+              <a >
                 <img
                   className="rounded-t-lg"
                   src="https://i.ibb.co/6HrKGmx/screenshot2.png"
@@ -64,7 +64,7 @@ const Portfolio = () => {
               </p>
             </p>
 
-            <Button>
+            <Button href="https://challenge-fitness-9cf387429034.herokuapp.com/login">
               <p>Visit Deployed App</p>
             </Button>
           </div>
@@ -74,7 +74,7 @@ const Portfolio = () => {
           <div className="flex flex-col h-full justify-between">
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               <p className="flex justify-center">Marvel Comic Search</p>
-              <a href="https://sparkkyjd.github.io/Marvel-comic-search/">
+              <a >
                 <img
                   className="rounded-t-lg"
                   src="https://i.ibb.co/f9NVPWH/screenshot3.png"
@@ -89,7 +89,7 @@ const Portfolio = () => {
               Wikipedia search. Powered by{" "}
               <span className="text-blue-500">JS/CSS/HTML/API</span>.
             </p>
-            <Button>
+            <Button href="https://sparkkyjd.github.io/Marvel-comic-search/">
               <p>Visit Deployed App</p>
             </Button>
           </div>
@@ -99,7 +99,7 @@ const Portfolio = () => {
           <div className="flex flex-col h-full justify-between">
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               <p className="flex justify-center">J.A.T.E</p>
-              <a href="https://pwa-jate-unc-6a94338fea53.herokuapp.com/">
+              <a >
                 <img className="rounded-t-lg" src={JATE} />
               </a>
             </h5>
@@ -110,7 +110,7 @@ const Portfolio = () => {
               highlighting, a responsive interface, and the convenience of
               offline access.
             </p>
-            <Button>
+            <Button href="https://pwa-jate-unc-6a94338fea53.herokuapp.com/">
               <p>Visit Deployed App</p>
             </Button>
           </div>
