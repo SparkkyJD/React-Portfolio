@@ -30,7 +30,7 @@ export default function About() {
               My experience as a Technician for 10+ years has equipped me with
               the ability to efficiently solve complex problems and approach
               tasks with creative thinking. This background, combined with my
-              newfound passion for Web Development, makes me excited to fully
+              passion for Web Development, makes me excited to fully
               transition into the field of Full Stack Web Development.
             </p>
             <p className="lg:text-xl mb-4">
