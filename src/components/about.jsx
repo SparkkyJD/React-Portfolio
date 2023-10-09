@@ -23,7 +23,7 @@ export default function About() {
             <p className="lg:text-xl mb-4">
               As a U.S. Navy Veteran with a background in maintaining Secret
               Level Aircraft and a recent graduate of the University of Chapel
-              Hill's Full Stack Web Developer Bootcamp, I bring a unique blend 
+              Hill's Full Stack Web Developer Program, I bring a unique blend 
               of technical expertise.
             </p>
             <p className="lg:text-xl mb-4">
